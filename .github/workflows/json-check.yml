@@ -1,0 +1,19 @@
+name: JSON check
+
+on:
+  push:
+    paths:
+      - "src/**.json"
+  pull_request:
+    paths:
+      - "src/**.json"
+
+jobs:
+  json-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: JSON check
+        uses: limitusus/json-syntax-check@v2
+        with:
+          pattern: "\\.json"
