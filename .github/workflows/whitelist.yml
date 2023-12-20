@@ -3,7 +3,7 @@ name: Add addresses to whitelist
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   whitelist:
