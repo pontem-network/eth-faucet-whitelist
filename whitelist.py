@@ -5,7 +5,7 @@ import json
 import subprocess
 
 PRIVATE_KEY = os.getenv("PRIVATE_KEY")
-L1_URL = "https://sepolia.infura.io/v3/f86a52a811834b9a8b33b437989f6b02"
+L1_URL = "https://sepolia.proxy.pontem.network"
 ADDRESSES_PATH = "src/evm.whiteList.json"
 CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS", "0xA2Aa3247B75923173Da2e6C4cc93dd5790030a6d")
 
